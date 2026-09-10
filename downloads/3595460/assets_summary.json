@@ -1,0 +1,90 @@
+{
+  "appid": 3595460,
+  "game_name": "Tiny Vending Machines",
+  "target_lang": "english",
+  "total_assets": 9,
+  "downloaded_count": 9,
+  "assets": [
+    {
+      "category": "small_capsule",
+      "name": "small_capsule",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3595460/554e305d0cf002f2b0871a91ba222627c57b5be3/capsule_231x87.jpg",
+      "filename": "capsule_231x87.jpg",
+      "local_path": "downloads\\3595460\\capsule_231x87.jpg",
+      "size_bytes": 14125,
+      "status": "downloaded"
+    },
+    {
+      "category": "header_image",
+      "name": "header_image",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3595460/11bbe2f7e0bcd21bfa8411b1f590fa2f2bf1fdd0/header.jpg",
+      "filename": "header.jpg",
+      "local_path": "downloads\\3595460\\header.jpg",
+      "size_bytes": 49349,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_capsule_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3595460/253de986ae92c93c4c8f700adf0e98cf7ce651c6/library_600x900_2x.jpg",
+      "filename": "library_600x900_2x.jpg",
+      "local_path": "downloads\\3595460\\library_600x900_2x.jpg",
+      "size_bytes": 195161,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_hero_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3595460/fa9749977a107298a42af16b44cb46073ae3f9a2/library_hero_2x.jpg",
+      "filename": "library_hero_2x.jpg",
+      "local_path": "downloads\\3595460\\library_hero_2x.jpg",
+      "size_bytes": 845889,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_hero_blur_image",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3595460/fa9749977a107298a42af16b44cb46073ae3f9a2/library_hero_blur.jpg",
+      "filename": "library_hero_blur.jpg",
+      "local_path": "downloads\\3595460\\library_hero_blur.jpg",
+      "size_bytes": 3491,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_logo_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3595460/4fbcc4d383dd51e3566809f5fd44a6890d51ede7/logo_2x.png",
+      "filename": "logo_2x.png",
+      "local_path": "downloads\\3595460\\logo_2x.png",
+      "size_bytes": 64371,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_header_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3595460/2bbc1e6597f78b6bf1e32f34baddff0a37cf3f7a/library_header_2x.jpg",
+      "filename": "library_header_2x.jpg",
+      "local_path": "downloads\\3595460\\library_header_2x.jpg",
+      "size_bytes": 140939,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "icon",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/3595460/82ae116adf4bb523329299b3d13356f1b6b2d7a9.jpg",
+      "filename": "community_icon_82ae116adf4bb523329299b3d13356f1b6b2d7a9.jpg",
+      "local_path": "downloads\\3595460\\community_icon_82ae116adf4bb523329299b3d13356f1b6b2d7a9.jpg",
+      "size_bytes": 1294,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "clienticon",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/3595460/d33085d8ab4761a1d7d2248841e345a400d77f1c.ico",
+      "filename": "clienticon_d33085d8ab4761a1d7d2248841e345a400d77f1c.ico",
+      "local_path": "downloads\\3595460\\clienticon_d33085d8ab4761a1d7d2248841e345a400d77f1c.ico",
+      "size_bytes": 360414,
+      "status": "downloaded"
+    }
+  ]
+}

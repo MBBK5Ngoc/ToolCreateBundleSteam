@@ -1,0 +1,90 @@
+{
+  "appid": 3719580,
+  "game_name": "My Tiny Garden",
+  "target_lang": "english",
+  "total_assets": 9,
+  "downloaded_count": 9,
+  "assets": [
+    {
+      "category": "small_capsule",
+      "name": "small_capsule",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3719580/dbad2aa07c81b3591165832f334fb58b9a97609d/capsule_231x87.jpg",
+      "filename": "capsule_231x87.jpg",
+      "local_path": "downloads\\3719580\\capsule_231x87.jpg",
+      "size_bytes": 12566,
+      "status": "downloaded"
+    },
+    {
+      "category": "header_image",
+      "name": "header_image",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3719580/6c05502e8ef2b9622ab3fa963c980acd75751ff8/header.jpg",
+      "filename": "header.jpg",
+      "local_path": "downloads\\3719580\\header.jpg",
+      "size_bytes": 44455,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_capsule_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3719580/d761ae1c4e477313de8b6c6dda89595eba3df635/library_capsule_2x.jpg",
+      "filename": "library_capsule_2x.jpg",
+      "local_path": "downloads\\3719580\\library_capsule_2x.jpg",
+      "size_bytes": 139020,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_hero_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3719580/a9122f94cb9ac8b36bc2b45cadf197a7689b4bc7/library_hero_2x.jpg",
+      "filename": "library_hero_2x.jpg",
+      "local_path": "downloads\\3719580\\library_hero_2x.jpg",
+      "size_bytes": 609340,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_hero_blur_image",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3719580/a9122f94cb9ac8b36bc2b45cadf197a7689b4bc7/library_hero_blur.jpg",
+      "filename": "library_hero_blur.jpg",
+      "local_path": "downloads\\3719580\\library_hero_blur.jpg",
+      "size_bytes": 1830,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_logo_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3719580/ff34ef760ee0ecb43e031796014d37964bef5203/logo_2x.png",
+      "filename": "logo_2x.png",
+      "local_path": "downloads\\3719580\\logo_2x.png",
+      "size_bytes": 93444,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_header_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3719580/4ef8bf0727ef9ba59c5867a562d0c0b754ebd517/library_header_2x.jpg",
+      "filename": "library_header_2x.jpg",
+      "local_path": "downloads\\3719580\\library_header_2x.jpg",
+      "size_bytes": 113065,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "icon",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/3719580/400a3e54da7d31b1de5ce66255385af4ab461b1d.jpg",
+      "filename": "community_icon_400a3e54da7d31b1de5ce66255385af4ab461b1d.jpg",
+      "local_path": "downloads\\3719580\\community_icon_400a3e54da7d31b1de5ce66255385af4ab461b1d.jpg",
+      "size_bytes": 775,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "clienticon",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/3719580/66d845af437c452eec98000172f788a87fda2803.ico",
+      "filename": "clienticon_66d845af437c452eec98000172f788a87fda2803.ico",
+      "local_path": "downloads\\3719580\\clienticon_66d845af437c452eec98000172f788a87fda2803.ico",
+      "size_bytes": 122022,
+      "status": "downloaded"
+    }
+  ]
+}

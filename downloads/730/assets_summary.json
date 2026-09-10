@@ -1,0 +1,135 @@
+{
+  "appid": 730,
+  "game_name": "Counter-Strike 2",
+  "target_lang": "english",
+  "total_assets": 14,
+  "downloaded_count": 14,
+  "assets": [
+    {
+      "category": "small_capsule",
+      "name": "small_capsule",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/730/942c04efaa5bc87afb6f2a97dbf17ac614c8a84d/capsule_231x87.jpg",
+      "filename": "capsule_231x87.jpg",
+      "local_path": "downloads\\730\\capsule_231x87.jpg",
+      "size_bytes": 9437,
+      "status": "downloaded"
+    },
+    {
+      "category": "header_image",
+      "name": "header_image",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg",
+      "filename": "header.jpg",
+      "local_path": "downloads\\730\\header.jpg",
+      "size_bytes": 33545,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_capsule_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/730/library_600x900_2x.jpg",
+      "filename": "library_600x900_2x.jpg",
+      "local_path": "downloads\\730\\library_600x900_2x.jpg",
+      "size_bytes": 120487,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_hero_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/730/library_hero_2x.jpg",
+      "filename": "library_hero_2x.jpg",
+      "local_path": "downloads\\730\\library_hero_2x.jpg",
+      "size_bytes": 784075,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_logo_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/730/logo_2x.png",
+      "filename": "logo_2x.png",
+      "local_path": "downloads\\730\\logo_2x.png",
+      "size_bytes": 90566,
+      "status": "downloaded"
+    },
+    {
+      "category": "store_assets",
+      "name": "main_capsule",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/730/capsule_616x353.jpg",
+      "filename": "capsule_616x353.jpg",
+      "local_path": "downloads\\730\\capsule_616x353.jpg",
+      "size_bytes": 64237,
+      "status": "downloaded"
+    },
+    {
+      "category": "store_assets",
+      "name": "small_capsule",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/730/capsule_231x87.jpg",
+      "filename": "capsule_231x87.jpg",
+      "local_path": "downloads\\730\\capsule_231x87.jpg",
+      "size_bytes": 9437,
+      "status": "skipped"
+    },
+    {
+      "category": "store_assets",
+      "name": "header",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/730/header.jpg",
+      "filename": "header.jpg",
+      "local_path": "downloads\\730\\header.jpg",
+      "size_bytes": 33545,
+      "status": "skipped"
+    },
+    {
+      "category": "store_assets",
+      "name": "hero_capsule",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/730/hero_capsule.jpg",
+      "filename": "hero_capsule.jpg",
+      "local_path": "downloads\\730\\hero_capsule.jpg",
+      "size_bytes": 54627,
+      "status": "downloaded"
+    },
+    {
+      "category": "store_assets",
+      "name": "page_background",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/730/page_bg_generated_v6b.jpg",
+      "filename": "page_bg_generated_v6b.jpg",
+      "local_path": "downloads\\730\\page_bg_generated_v6b.jpg",
+      "size_bytes": 63289,
+      "status": "downloaded"
+    },
+    {
+      "category": "store_assets",
+      "name": "raw_page_background",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/730/page_bg_raw.jpg",
+      "filename": "page_bg_raw.jpg",
+      "local_path": "downloads\\730\\page_bg_raw.jpg",
+      "size_bytes": 1901643,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "icon",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/730/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+      "filename": "community_icon_8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+      "local_path": "downloads\\730\\community_icon_8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+      "size_bytes": 702,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "logo",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/730/d0595ff02f5c79fd19b06f4d6165c3fda2372820.jpg",
+      "filename": "community_logo_d0595ff02f5c79fd19b06f4d6165c3fda2372820.jpg",
+      "local_path": "downloads\\730\\community_logo_d0595ff02f5c79fd19b06f4d6165c3fda2372820.jpg",
+      "size_bytes": 6906,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "clienticon",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/730/324b323045b09bace182f928f4104dfcd93cb7f3.ico",
+      "filename": "clienticon_324b323045b09bace182f928f4104dfcd93cb7f3.ico",
+      "local_path": "downloads\\730\\clienticon_324b323045b09bace182f928f4104dfcd93cb7f3.ico",
+      "size_bytes": 98268,
+      "status": "downloaded"
+    }
+  ]
+}

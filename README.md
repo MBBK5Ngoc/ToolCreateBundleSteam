@@ -1,6 +1,6 @@
 # ToolCreateBundleSteam - Steam Bundle Image Tool
 
-A tool for automatically downloading Steam store assets and generating professional two-game bundle capsules and banners.
+A tool for automatically downloading Steam store assets and generating professional Steam bundle capsules and banners for **2, 3, 4, 5, 6 or more games**.
 
 ---
 
@@ -9,13 +9,13 @@ A tool for automatically downloading Steam store assets and generating professio
 ```
 BundleImageTool/
 ├── main.py                   # Main entry point (check -> download -> generate)
-├── create_bundle_assets.py   # Image composition, diagonal split, logo & bg logic
+├── create_bundle_assets.py   # Multi-game image composition (strips, grid, horizontal, auto)
 ├── download_steam_assets.py  # Steam CDN downloader (anonymous CDN / PICS)
 ├── downloads/                # Cached raw assets per app: downloads/<appid>/
 │   └── <appid>/
 │       ├── library_hero_2x.jpg
 │       └── logo_2x.png
-└── output/                   # Generated bundle assets: output/bundle_<id1>_<id2>/
+└── output/                   # Generated bundle assets: output/bundle_<id1>_<id2>_.../
 ```
 
 ---
@@ -32,42 +32,74 @@ BundleImageTool/
 
 ## How It Works (Pipeline)
 
-When you run `main.py <appid1> <appid2>`:
-1. **Check**: Checks `downloads/<appid>/` for `library_hero_2x.jpg` and `logo_2x.png`.
-2. **Download**: If any required assets are missing, automatically downloads them from Steam. If already present, skips downloading.
-3. **Generate**: Composites the background hero images, draws the divider line, fits and drops shadows on the logos on top, and outputs all 6 Steam bundle resolutions.
+When you run `main.py <appid1> <appid2> [<appid3> ...]`:
+1. **Check**: Checks `downloads/<appid>/` for `library_hero_2x.jpg` and `logo_2x.png` for all provided App IDs.
+2. **Download**: If any required assets are missing, automatically downloads them from Steam PICS/CDN. If already present, skips downloading.
+3. **Generate**: Composites background hero images, draws dividers, fits and drops shadows on the logos on top, and outputs all 6 Steam bundle resolutions.
 
 ---
 
 ## Basic Usage
 
-```powershell
-python main.py <appid1> <appid2>
-```
-
-**Example:**
+### 2 Games (Classic Diagonal Split)
 ```powershell
 python main.py 3681780 2666510
 ```
 
-> **Image Order**:
-> - `<appid1>` is placed on the **left / bottom** half.
-> - `<appid2>` is placed on the **right / top** half.
+### Multi-Game Bundles (3, 4, 5, 6+ Games)
+Pass 3, 4, 5, 6 or more Steam App IDs:
+```powershell
+# 3 Games:
+python main.py 3681780 2666510 3419430
+
+# 4 Games:
+python main.py 3681780 2666510 3419430 570
+
+# 5 Games:
+python main.py 3681780 2666510 3419430 3719580 3595460
+
+# 6 Games:
+python main.py 3681780 2666510 3419430 570 3719580 3595460
+```
+
+---
+
+## Layout Options (`--layout`)
+
+Choose how multi-game bundles are visually arranged:
+
+| Layout | Description |
+|---|---|
+| `--layout auto` *(default)* | Intelligently adapts to each asset's aspect ratio: slanted strips for wide capsules; balanced 2D grid cells or horizontal slices for `vertical_capsule`. |
+| `--layout strips` | Parallel vertical/slanted slices across all assets. (Rotatable with `--rotation`). |
+| `--layout grid` | Structured 2D collage grid (2×2 for 4 games, 3×2 on wide / 2×3 on tall for 6 games, 3+2 on wide / 2+2+1 on tall for 5 games). |
+| `--layout horizontal` | Stacked horizontal slices (especially clean on tall assets like `vertical_capsule`). |
+
+**Examples:**
+```powershell
+# 5 games in strips:
+python main.py 3681780 2666510 3419430 3719580 3595460 --layout strips
+
+# 6 games in a 2D collage grid:
+python main.py 3681780 2666510 3419430 570 3719580 3595460 --layout grid
+
+# 4 games with stacked horizontal rows:
+python main.py 3681780 2666510 3419430 570 --layout horizontal
+```
 
 ---
 
 ## Options Reference
 
 ### 1. Rotation (`--rotation`)
-Tilts the dividing line by extra degrees from the default ~8.5° diagonal lean.
+Tilts the dividing lines by extra degrees from the default slant.
 
 - Default: `0` (~8.5° slant)
-- Positive (`+15`, `+20`, `+80`): Steeper lean towards horizontal. At `80`, the line splits top/bottom.
+- Positive (`+15`, `+20`, `+80`): Steeper lean towards horizontal.
 - Negative (`-5`): Shallower lean, closer to a vertical split.
 
 ```powershell
-python main.py 3681780 2666510 --rotation 20
-python main.py 3681780 2666510 --rotation 80
+python main.py 3681780 2666510 3419430 --rotation 20
 ```
 
 ---
@@ -79,11 +111,7 @@ Scales individual game logos relative to their auto-fitted container. Repeatable
 - Example: `3681780x1.3` means 30% larger.
 
 ```powershell
-# Scale only App 1 logo by 1.3x:
-python main.py 3681780 2666510 --scale 3681780x1.3
-
-# Scale both logos individually:
-python main.py 3681780 2666510 --scale 3681780x1.1 --scale 2666510x1.2
+python main.py 3681780 2666510 3419430 --scale 3681780x1.2 --scale 2666510x1.1
 ```
 
 ---
@@ -91,7 +119,7 @@ python main.py 3681780 2666510 --scale 3681780x1.1 --scale 2666510x1.2
 ### 3. Background Image Movement (`--up`, `--down`, `--left`, `--right`, `--move`)
 Shifts an app's background hero image in pixels (calibrated to the 920×430 reference resolution and scaled proportionally across all 6 asset sizes). The canvas automatically expands its internal crop boundary so **no black borders or empty space will appear**.
 
-Accepted formats (both quoted and unquoted work):
+Accepted formats:
 - `--down <appid> <pixels>` or `--down "<appid> <pixels>"` or `--down <appid>+<pixels>`
 - `--up <appid> <pixels>`
 - `--left <appid> <pixels>`
@@ -99,25 +127,13 @@ Accepted formats (both quoted and unquoted work):
 - `--move "<direction>: <appid> <pixels>"`
 
 ```powershell
-# Move App 3681780 background down by 50px:
-python main.py 3681780 2666510 --down 3681780 +50
-
-# Move App 2666510 background up by 20px:
-python main.py 3681780 2666510 --up 2666510 +20
-
-# Move App 3681780 left by 30px:
-python main.py 3681780 2666510 --left 3681780 +30
-# OR with negative right:
-python main.py 3681780 2666510 --right 3681780 -30
-
-# Using --move syntax:
-python main.py 3681780 2666510 --move "down: 3681780 +50"
+python main.py 3681780 2666510 3419430 --down 3681780 +50 --up 2666510 +20
 ```
 
 ---
 
 ### 4. Single Image Generation (`--only` / `"name image" only`)
-By default, the script generates all 6 bundle images. To generate only one (or a subset of) specific images, specify `--only <name>` or trailing `<name> only`.
+To generate only one (or a subset of) specific images, specify `--only <name>` or trailing `<name> only`.
 
 - Supported image names:
   - `package_header` (1414 × 464)
@@ -128,11 +144,8 @@ By default, the script generates all 6 bundle images. To generate only one (or a
   - `page_background` (1438 × 810)
 
 ```powershell
-# Generate only the vertical capsule with --only flag:
-python main.py 3681780 3419430 --rotation 45 --only vertical_capsule
-
-# Or using natural trailing syntax:
-python main.py 3681780 3419430 --rotation 45 vertical_capsule only
+python main.py 3681780 2666510 3419430 --only vertical_capsule
+python main.py 3681780 2666510 3419430 vertical_capsule only
 ```
 
 ---
@@ -141,26 +154,17 @@ python main.py 3681780 3419430 --rotation 45 vertical_capsule only
 
 | Flag | Description |
 |---|---|
-| `--only <name>` / `-o` | Generate only specific image(s) (e.g. `--only vertical_capsule`). |
+| `--layout <mode>` | Layout style: `auto`, `strips`, `grid`, `horizontal`. |
+| `--only <name>` / `-o` | Generate only specific image(s). |
 | `--force-download` | Re-downloads Steam assets even if already cached locally. |
 | `--downloads-dir <dir>` | Custom directory for downloaded assets (default: `downloads`). |
 | `--output-dir <dir>` | Custom directory for generated bundles (default: `output`). |
 
 ---
 
-## Full Example Command
-
-Run bundle for **3681780** (WinMon) and **2666510** (Rusty's Retirement) with 80° rotation, 1.3× logo scale for WinMon, and moving WinMon background down 50px:
-
-```powershell
-python main.py 3681780 2666510 --rotation 80 --scale 3681780x1.3 --down 3681780 +50
-```
-
----
-
 ## Output Asset Specifications
 
-Assets are saved into `output/bundle_<appid1>_<appid2>/`:
+Assets are saved into `output/bundle_<appid1>_<appid2>_.../`:
 
 | Asset Name | Resolution | Description |
 |---|---|---|
