@@ -1,0 +1,90 @@
+{
+  "appid": 3681780,
+  "game_name": "WinMon",
+  "target_lang": "english",
+  "total_assets": 9,
+  "downloaded_count": 9,
+  "assets": [
+    {
+      "category": "small_capsule",
+      "name": "small_capsule",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3681780/882841982caee09e49f99b197f9fc9b8664f4c58/capsule_231x87.jpg",
+      "filename": "capsule_231x87.jpg",
+      "local_path": "downloads\\3681780\\capsule_231x87.jpg",
+      "size_bytes": 17593,
+      "status": "downloaded"
+    },
+    {
+      "category": "header_image",
+      "name": "header_image",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3681780/fd0f19b8e1f601dba9b118d6ce42fb0c5973f4a9/header.jpg",
+      "filename": "header.jpg",
+      "local_path": "downloads\\3681780\\header.jpg",
+      "size_bytes": 63914,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_capsule_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3681780/0afbc760978ce3f0f6d722b3fb2000b8365ec5be/library_capsule_2x.jpg",
+      "filename": "library_capsule_2x.jpg",
+      "local_path": "downloads\\3681780\\library_capsule_2x.jpg",
+      "size_bytes": 242574,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_hero_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3681780/f61796202a21ab2950696fff38af1c28d6f2bc5f/library_hero_2x.jpg",
+      "filename": "library_hero_2x.jpg",
+      "local_path": "downloads\\3681780\\library_hero_2x.jpg",
+      "size_bytes": 1536492,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_hero_blur_image",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3681780/f61796202a21ab2950696fff38af1c28d6f2bc5f/library_hero_blur.jpg",
+      "filename": "library_hero_blur.jpg",
+      "local_path": "downloads\\3681780\\library_hero_blur.jpg",
+      "size_bytes": 4191,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_logo_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3681780/1c48c3984bbe8619cbfac458ed4bb3bc4866be8d/logo_2x.png",
+      "filename": "logo_2x.png",
+      "local_path": "downloads\\3681780\\logo_2x.png",
+      "size_bytes": 125564,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_header_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3681780/fd0f19b8e1f601dba9b118d6ce42fb0c5973f4a9/library_header_2x.jpg",
+      "filename": "library_header_2x.jpg",
+      "local_path": "downloads\\3681780\\library_header_2x.jpg",
+      "size_bytes": 206772,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "icon",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/3681780/df2fb40d3b997e54dfbab2d30a3b5d40c3d59fe2.jpg",
+      "filename": "community_icon_df2fb40d3b997e54dfbab2d30a3b5d40c3d59fe2.jpg",
+      "local_path": "downloads\\3681780\\community_icon_df2fb40d3b997e54dfbab2d30a3b5d40c3d59fe2.jpg",
+      "size_bytes": 1333,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "clienticon",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/3681780/df2fb40d3b997e54dfbab2d30a3b5d40c3d59fe2.ico",
+      "filename": "clienticon_df2fb40d3b997e54dfbab2d30a3b5d40c3d59fe2.ico",
+      "local_path": "downloads\\3681780\\clienticon_df2fb40d3b997e54dfbab2d30a3b5d40c3d59fe2.ico",
+      "size_bytes": 102222,
+      "status": "downloaded"
+    }
+  ]
+}

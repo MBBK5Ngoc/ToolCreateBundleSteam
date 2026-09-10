@@ -1,0 +1,117 @@
+{
+  "appid": 3419430,
+  "game_name": "Bongo Cat",
+  "target_lang": "english",
+  "total_assets": 12,
+  "downloaded_count": 12,
+  "assets": [
+    {
+      "category": "small_capsule",
+      "name": "small_capsule",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3419430/a72a5965134f12a6cf86879fa2eb34ba16040486/capsule_231x87.jpg",
+      "filename": "capsule_231x87.jpg",
+      "local_path": "D:\\BundleImageTool\\downloads\\3419430\\capsule_231x87.jpg",
+      "size_bytes": 9609,
+      "status": "downloaded"
+    },
+    {
+      "category": "header_image",
+      "name": "header_image",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3419430/2e6c93c020fe13d09d8120bb9164ed7cb58f00c5/header.jpg",
+      "filename": "header.jpg",
+      "local_path": "D:\\BundleImageTool\\downloads\\3419430\\header.jpg",
+      "size_bytes": 25097,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_capsule_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3419430/bfd307468f30f9c716f949f8c4e5d337c40cb283/library_capsule_2x.jpg",
+      "filename": "library_capsule_2x.jpg",
+      "local_path": "D:\\BundleImageTool\\downloads\\3419430\\library_capsule_2x.jpg",
+      "size_bytes": 87665,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_hero_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3419430/9a4949145bafd78ffa4bd2d772cc0583e1cb32e9/library_hero_2x.jpg",
+      "filename": "library_hero_2x.jpg",
+      "local_path": "D:\\BundleImageTool\\downloads\\3419430\\library_hero_2x.jpg",
+      "size_bytes": 180412,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_hero_blur_image",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3419430/9a4949145bafd78ffa4bd2d772cc0583e1cb32e9/library_hero_blur.jpg",
+      "filename": "library_hero_blur.jpg",
+      "local_path": "D:\\BundleImageTool\\downloads\\3419430\\library_hero_blur.jpg",
+      "size_bytes": 1612,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_logo_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3419430/e16b839f12f911aeeda11ba72c7f562d5d6bd2ca/logo_2x.png",
+      "filename": "logo_2x.png",
+      "local_path": "D:\\BundleImageTool\\downloads\\3419430\\logo_2x.png",
+      "size_bytes": 130816,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_header_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3419430/2e6c93c020fe13d09d8120bb9164ed7cb58f00c5/library_header_2x.jpg",
+      "filename": "library_header_2x.jpg",
+      "local_path": "D:\\BundleImageTool\\downloads\\3419430\\library_header_2x.jpg",
+      "size_bytes": 71004,
+      "status": "downloaded"
+    },
+    {
+      "category": "store_assets",
+      "name": "header",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3419430/header.jpg",
+      "filename": "header.jpg",
+      "local_path": "D:\\BundleImageTool\\downloads\\3419430\\header.jpg",
+      "size_bytes": 25097,
+      "status": "skipped"
+    },
+    {
+      "category": "store_assets",
+      "name": "header_2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3419430/header_2x.jpg",
+      "filename": "header_2x.jpg",
+      "local_path": "D:\\BundleImageTool\\downloads\\3419430\\header_2x.jpg",
+      "size_bytes": 70874,
+      "status": "downloaded"
+    },
+    {
+      "category": "store_assets",
+      "name": "page_background",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/3419430/page_bg_generated_v6b.jpg",
+      "filename": "page_bg_generated_v6b.jpg",
+      "local_path": "D:\\BundleImageTool\\downloads\\3419430\\page_bg_generated_v6b.jpg",
+      "size_bytes": 27113,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "icon",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/3419430/b25d4b846c745bdf809f5657af00298e0ae62465.jpg",
+      "filename": "community_icon_b25d4b846c745bdf809f5657af00298e0ae62465.jpg",
+      "local_path": "D:\\BundleImageTool\\downloads\\3419430\\community_icon_b25d4b846c745bdf809f5657af00298e0ae62465.jpg",
+      "size_bytes": 597,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "clienticon",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/3419430/5be08036975d8c6d1809477e2f61c0e590f4f562.ico",
+      "filename": "clienticon_5be08036975d8c6d1809477e2f61c0e590f4f562.ico",
+      "local_path": "D:\\BundleImageTool\\downloads\\3419430\\clienticon_5be08036975d8c6d1809477e2f61c0e590f4f562.ico",
+      "size_bytes": 4286,
+      "status": "downloaded"
+    }
+  ]
+}

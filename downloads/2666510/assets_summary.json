@@ -1,0 +1,135 @@
+{
+  "appid": 2666510,
+  "game_name": "Rusty's Retirement",
+  "target_lang": "english",
+  "total_assets": 14,
+  "downloaded_count": 14,
+  "assets": [
+    {
+      "category": "small_capsule",
+      "name": "small_capsule",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2666510/21808988b2d474efd26070f975320c10ea2df0bf/capsule_231x87.jpg",
+      "filename": "capsule_231x87.jpg",
+      "local_path": "downloads\\2666510\\capsule_231x87.jpg",
+      "size_bytes": 16431,
+      "status": "downloaded"
+    },
+    {
+      "category": "header_image",
+      "name": "header_image",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2666510/1b9c3e5c1a8a08354bed63fbeed798fcec74aff9/header.jpg",
+      "filename": "header.jpg",
+      "local_path": "downloads\\2666510\\header.jpg",
+      "size_bytes": 66144,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_capsule_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2666510/45d4bdc392aa1efa38f92a402086d43da0ec8aae/library_600x900_2x.jpg",
+      "filename": "library_600x900_2x.jpg",
+      "local_path": "downloads\\2666510\\library_600x900_2x.jpg",
+      "size_bytes": 208614,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_hero_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2666510/library_hero_2x.jpg",
+      "filename": "library_hero_2x.jpg",
+      "local_path": "downloads\\2666510\\library_hero_2x.jpg",
+      "size_bytes": 608516,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_logo_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2666510/logo_2x.png",
+      "filename": "logo_2x.png",
+      "local_path": "downloads\\2666510\\logo_2x.png",
+      "size_bytes": 88139,
+      "status": "downloaded"
+    },
+    {
+      "category": "library_assets_full",
+      "name": "library_header_image2x",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2666510/1b9c3e5c1a8a08354bed63fbeed798fcec74aff9/library_header_2x.jpg",
+      "filename": "library_header_2x.jpg",
+      "local_path": "downloads\\2666510\\library_header_2x.jpg",
+      "size_bytes": 198457,
+      "status": "downloaded"
+    },
+    {
+      "category": "store_assets",
+      "name": "main_capsule",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2666510/capsule_616x353.jpg",
+      "filename": "capsule_616x353.jpg",
+      "local_path": "downloads\\2666510\\capsule_616x353.jpg",
+      "size_bytes": 114687,
+      "status": "downloaded"
+    },
+    {
+      "category": "store_assets",
+      "name": "small_capsule",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2666510/capsule_231x87.jpg",
+      "filename": "capsule_231x87.jpg",
+      "local_path": "downloads\\2666510\\capsule_231x87.jpg",
+      "size_bytes": 17851,
+      "status": "downloaded"
+    },
+    {
+      "category": "store_assets",
+      "name": "header",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2666510/header.jpg",
+      "filename": "header.jpg",
+      "local_path": "downloads\\2666510\\header.jpg",
+      "size_bytes": 66367,
+      "status": "downloaded"
+    },
+    {
+      "category": "store_assets",
+      "name": "hero_capsule",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2666510/hero_capsule.jpg",
+      "filename": "hero_capsule.jpg",
+      "local_path": "downloads\\2666510\\hero_capsule.jpg",
+      "size_bytes": 95124,
+      "status": "downloaded"
+    },
+    {
+      "category": "store_assets",
+      "name": "page_background",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2666510/page_bg_generated_v6b.jpg",
+      "filename": "page_bg_generated_v6b.jpg",
+      "local_path": "downloads\\2666510\\page_bg_generated_v6b.jpg",
+      "size_bytes": 74054,
+      "status": "downloaded"
+    },
+    {
+      "category": "store_assets",
+      "name": "raw_page_background",
+      "url": "https://shared.steamstatic.com/store_item_assets/steam/apps/2666510/page_bg_raw.jpg",
+      "filename": "page_bg_raw.jpg",
+      "local_path": "downloads\\2666510\\page_bg_raw.jpg",
+      "size_bytes": 46624,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "icon",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/2666510/72be5b22943d8874a18c9de214f1d5fa82d98310.jpg",
+      "filename": "community_icon_72be5b22943d8874a18c9de214f1d5fa82d98310.jpg",
+      "local_path": "downloads\\2666510\\community_icon_72be5b22943d8874a18c9de214f1d5fa82d98310.jpg",
+      "size_bytes": 703,
+      "status": "downloaded"
+    },
+    {
+      "category": "community_assets",
+      "name": "clienticon",
+      "url": "https://shared.steamstatic.com/community_assets/images/apps/2666510/8cb7ff0d4522c026ae98d453a207293af42bd540.ico",
+      "filename": "clienticon_8cb7ff0d4522c026ae98d453a207293af42bd540.ico",
+      "local_path": "downloads\\2666510\\clienticon_8cb7ff0d4522c026ae98d453a207293af42bd540.ico",
+      "size_bytes": 3262,
+      "status": "downloaded"
+    }
+  ]
+}

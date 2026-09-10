@@ -1,4 +1,4 @@
-# ToolCreateBundleSteam - Steam Bundle Image Tool
+# Steam Bundle Image Tool - How to Run
 
 A tool for automatically downloading Steam store assets and generating professional two-game bundle capsules and banners.
 
