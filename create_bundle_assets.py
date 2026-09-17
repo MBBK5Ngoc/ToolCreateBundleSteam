@@ -33,7 +33,11 @@ import sys
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, PngImagePlugin
+
+# Allow loading large PNG files with large text chunks or high resolutions
+PngImagePlugin.MAX_TEXT_CHUNK = 100 * 1024 * 1024
+Image.MAX_IMAGE_PIXELS = None
 
 # ---------------------------------------------------------------------------
 # Bundle asset specs  (name, width, height)
@@ -654,9 +658,11 @@ def process(*args, **kwargs):
     print(f"  Layout style   : {layout.upper()}")
     if layout in ("auto", "strips"):
         print(f"  Diagonal angle : {eff_angle:.4f}  (rotation offset: {rotation_deg:+.1f} deg)")
+    all_off = bg_offsets.get("all", (0.0, 0.0))
     for aid in appids:
-        s = float(logo_scales.get(str(aid), 1.0))
-        off = bg_offsets.get(str(aid), (0.0, 0.0))
+        s = float(logo_scales.get(str(aid), logo_scales.get("all", 1.0)))
+        app_off = bg_offsets.get(str(aid), (0.0, 0.0))
+        off = (app_off[0] + all_off[0], app_off[1] + all_off[1])
         info_strs = []
         if s != 1.0:
             info_strs.append(f"scale=x{s:.2f}")
@@ -681,12 +687,13 @@ def process(*args, **kwargs):
         feather = max(2, int(min(w, h) * 0.01))
 
         # Scale offsets proportionally to asset size relative to reference resolution
-        scaled_offsets = [
-            (bg_offsets.get(str(aid), (0.0, 0.0))[0] * (w / _REF_W),
-             bg_offsets.get(str(aid), (0.0, 0.0))[1] * (h / _REF_H))
-            for aid in appids
-        ]
-        scales_list = [float(logo_scales.get(str(aid), 1.0)) for aid in appids]
+        scaled_offsets = []
+        for aid in appids:
+            app_off = bg_offsets.get(str(aid), (0.0, 0.0))
+            eff_x = app_off[0] + all_off[0]
+            eff_y = app_off[1] + all_off[1]
+            scaled_offsets.append((eff_x * (w / _REF_W), eff_y * (h / _REF_H)))
+        scales_list = [float(logo_scales.get(str(aid), logo_scales.get("all", 1.0))) for aid in appids]
 
         img = make_multi_bundle_image(
             heroes=heroes,
@@ -730,19 +737,19 @@ def parse_direction_token(direction: str, tokens) -> tuple[str, float]:
     raw = " ".join(tokens) if isinstance(tokens, list) else str(tokens)
     raw = raw.strip()
     raw = re.sub(r"^(up|down|left|right)[:\s]+", "", raw, flags=re.IGNORECASE)
-    m = re.match(r"^(\d+)[\s:x,]*([+-]?\d+(?:\.\d+)?)$", raw.strip())
+    m = re.match(r"^(\d+|all)[\s:x,]*([+-]?\d+(?:\.\d+)?)$", raw.strip(), flags=re.IGNORECASE)
     if not m:
-        raise ValueError(f"Cannot parse --{direction} value '{raw}'. Expected e.g. '{direction}: 3681780 +50' or '3681780 +50'")
-    return m.group(1), float(m.group(2))
+        raise ValueError(f"Cannot parse --{direction} value '{raw}'. Expected e.g. '{direction}: 3681780 +50' or '3681780 +50' or 'all 50'")
+    return m.group(1).lower(), float(m.group(2))
 
 
 def parse_move_token(tokens) -> tuple[str, float, float]:
     raw = " ".join(tokens) if isinstance(tokens, list) else str(tokens)
     raw = raw.strip()
-    m_dir = re.match(r"^(up|down|left|right)[:\s]+(\d+)[\s:x,]*([+-]?\d+(?:\.\d+)?)$", raw, re.IGNORECASE)
+    m_dir = re.match(r"^(up|down|left|right)[:\s]+(\d+|all)[\s:x,]*([+-]?\d+(?:\.\d+)?)$", raw, re.IGNORECASE)
     if m_dir:
         direction = m_dir.group(1).lower()
-        appid = m_dir.group(2)
+        appid = m_dir.group(2).lower()
         amount = float(m_dir.group(3))
         dx, dy = 0.0, 0.0
         if direction == "down": dy = amount
@@ -750,10 +757,10 @@ def parse_move_token(tokens) -> tuple[str, float, float]:
         elif direction == "right": dx = amount
         elif direction == "left": dx = -amount
         return appid, dx, dy
-    m_xy = re.match(r"^(\d+)[\s,x]+([+-]?\d+(?:\.\d+)?)[\s,x]+([+-]?\d+(?:\.\d+)?)$", raw)
+    m_xy = re.match(r"^(\d+|all)[\s,x]+([+-]?\d+(?:\.\d+)?)[\s,x]+([+-]?\d+(?:\.\d+)?)$", raw, re.IGNORECASE)
     if m_xy:
-        return m_xy.group(1), float(m_xy.group(2)), float(m_xy.group(3))
-    raise ValueError(f"Cannot parse --move value '{raw}'. Expected e.g. 'down: 3681780 +50' or '3681780 0 50'")
+        return m_xy.group(1).lower(), float(m_xy.group(2)), float(m_xy.group(3))
+    raise ValueError(f"Cannot parse --move value '{raw}'. Expected e.g. 'down: 3681780 +50' or '3681780 0 50' or 'all 0 50'")
 
 
 def build_bg_offsets(up_list=None, down_list=None, left_list=None, right_list=None, move_list=None) -> dict[str, tuple[float, float]]:

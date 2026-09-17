@@ -36,3 +36,7 @@ Thumbs.db
 ehthumbs.db
 [Dd]esktop.ini
 .DS_Store
+
+# Generated downloads and outputs
+downloads/
+output/

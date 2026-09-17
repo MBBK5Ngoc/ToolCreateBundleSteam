@@ -120,14 +120,16 @@ python main.py 3681780 2666510 3419430 --scale 3681780x1.2 --scale 2666510x1.1
 Shifts an app's background hero image in pixels (calibrated to the 920×430 reference resolution and scaled proportionally across all 6 asset sizes). The canvas automatically expands its internal crop boundary so **no black borders or empty space will appear**.
 
 Accepted formats:
-- `--down <appid> <pixels>` or `--down "<appid> <pixels>"` or `--down <appid>+<pixels>`
-- `--up <appid> <pixels>`
-- `--left <appid> <pixels>`
-- `--right <appid> <pixels>`
-- `--move "<direction>: <appid> <pixels>"`
+- `--down <appid|all> <pixels>` or `--down "<appid|all> <pixels>"` or `--down <appid|all>+<pixels>`
+- `--up <appid|all> <pixels>`
+- `--left <appid|all> <pixels>`
+- `--right <appid|all> <pixels>`
+- `--move "<direction>: <appid|all> <pixels>"`
 
 ```powershell
 python main.py 3681780 2666510 3419430 --down 3681780 +50 --up 2666510 +20
+# Shift all background images left by 300px:
+python main.py 3681780 2666510 3419430 --left all 300
 ```
 
 ---
